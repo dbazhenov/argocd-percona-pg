@@ -149,7 +149,7 @@ spec:
 
   instances:
   - name: instance1
-    replicas: 3
+    replicas: 1
 
     affinity:
       podAntiAffinity:
@@ -160,10 +160,10 @@ spec:
               matchLabels:
                 postgres-operator.crunchydata.com/data: postgres
             topologyKey: kubernetes.io/hostname
-#    resources:
-#      limits:
-#        cpu: 2.0
-#        memory: 4Gi
+    resources:
+      limits:
+        cpu: 1.0
+        memory: 2Gi
 #    containers:
 #      replicaCertCopy:
 #        resources:
@@ -240,7 +240,7 @@ spec:
 
   proxy:
     pgBouncer:
-      replicas: 3
+      replicas: 1
       image: percona/percona-postgresql-operator:2.6.0-ppg16.8-pgbouncer1.24.0
 #      exposeSuperusers: true
 #      resources:
