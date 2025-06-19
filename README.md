@@ -1,0 +1,1 @@
+# ArgoCD Percona Operator for PostgreSQL Deployment  
