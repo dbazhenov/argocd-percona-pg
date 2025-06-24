@@ -40,14 +40,14 @@ spec:
 
 #  autoCreateUserSchema: true
 
-users:
-  - name: daniil
-    # databases:
-    #    - zoo
-    options: "SUPERUSER"
-    password:
-      type: ASCII
-    secretName: "daniil-credentials"
+  users:
+    - name: daniil
+      # databases:
+      #   - zoo
+      options: "SUPERUSER"
+      password:
+        type: ASCII
+      secretName: "daniil-credentials"
 
 #  databaseInitSQL:
 #    key: init.sql
