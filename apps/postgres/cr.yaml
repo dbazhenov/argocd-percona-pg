@@ -43,8 +43,7 @@ spec:
   users:
     - name: daniil
       databases:
-        - postgres
-        - pg-cluster-1
+        - daniil
       options: "SUPERUSER"
       password:
         type: ASCII
