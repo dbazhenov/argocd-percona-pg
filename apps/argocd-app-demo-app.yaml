@@ -11,7 +11,7 @@ spec:
     path: k8s/helm
   destination:
     server: https://kubernetes.default.svc
-    namespace: demo-app
+    namespace: postgres-operator
   syncPolicy:
     automated:
       prune: true
