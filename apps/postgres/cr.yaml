@@ -244,7 +244,7 @@ spec:
       image: percona/percona-postgresql-operator:2.6.0-ppg16.8-pgbouncer1.24.0
       expose:
         type: LoadBalancer
-#      exposeSuperusers: true
+      exposeSuperusers: true
 #      resources:
 #        limits:
 #          cpu: 200m
