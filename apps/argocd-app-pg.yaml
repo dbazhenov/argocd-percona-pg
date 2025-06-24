@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: gitops-manager
+  name: postgres-manager
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/dbazhenov/argocd-percona-pg.git
     targetRevision: main
-    path: apps 
+    path: apps/postgres 
   destination:
     server: https://kubernetes.default.svc
-    namespace: database
+    namespace: postgres-operator
   syncPolicy:
     automated:
       prune: true 
