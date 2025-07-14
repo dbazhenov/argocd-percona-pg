@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://coroot.github.io/helm-charts
     chart: coroot-ce
-    targetRevision: latest
+    targetRevision: 0.3.1
     helm:
       parameters:
         - name: clickhouse.shards
