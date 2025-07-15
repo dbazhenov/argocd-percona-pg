@@ -4,8 +4,6 @@ metadata:
   name: coroot
   namespace: argocd
 spec:
-  dependsOn:
-    - coroot-operator
   project: default
   source:
     repoURL: https://coroot.github.io/helm-charts
